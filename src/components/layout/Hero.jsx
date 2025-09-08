@@ -25,7 +25,7 @@ function Hero(){
                      onClick={() => setCurrentImgPage(prev => prev > 1 ? prev - 1 : prev)}><i className="fa-solid fa-angle-left"></i></button>
             {
             currentImg?.map((img , index) => {
-              return  <img src={img.img} alt="" key={index} className={`w-full  h-[50vh] sm:h-[60vh] lg:h-[70vh]
+              return  <img src={img.img} alt="" key={index} className={`w-full h-[300px] object-cover
                  transition-all duration-500 rounded-lg
                   `} />
             })
